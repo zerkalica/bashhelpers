@@ -1,0 +1,3 @@
+#!/bin/sh
+
+chown -R $1:$2 * && find . -type d -exec chmod 775 {} \; && find . -type f -exec chmod 660 {} \;

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cdp=${2:-"cp1251"}
+for i in $1 ; do
+  mv "${i}" "${i}.orig"
+  cat "${i}.orig" | iconv -f "${cdp}" -o "${i}"
+  sed 's/\r//g' -i "${i}"
+done
