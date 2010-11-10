@@ -15,7 +15,17 @@ GITOSIS_URL="git@$GITOSIS_HOST"
 
 [ -d "$WORKPLACE" ] || mkdir -p "$WORKPLACE"
 echo git clone "$GITOSIS_URL:gitosis-admin.git"
-cd "$WORKPLACE" && git clone "$GITOSIS_URL:gitosis-admin.git" && cd "$WORKPLACE/gitosis-admin" && \
+
+cpwd=$(pwd)
+cd "$WORKPLACE" || exit 1
+if [ -d "$WORKPLACE/gitosis-admin/.git" ] ; then
+  cd "$WORKPLACE/gitosis-admin"
+  git pull || exit 1
+else
+  git clone "$GITOSIS_URL:gitosis-admin.git" || exit 1
+fi
+
+cd "$WORKPLACE/gitosis-admin" && \
 echo "
 [group ${PROJECT_NAME}_team]
 writable = $PROJECT_NAME
@@ -24,3 +34,4 @@ git commit -a -m "Allow $MEMBERS access to $PROJECT_NAME.git" &&
 git push && \
 echo "admin: configure gitosis.conf in admin git: $WORKPLACE/gitosis-admin, git members: $MEMBERS" && \
 echo "member: cd your_project && git init && git remote add origin $GITOSIS_URL:$PROJECT_NAME.git"
+cd "$cpwd"
