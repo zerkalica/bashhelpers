@@ -18,7 +18,7 @@ fstab_add_win() {
 		mkdir -p "${INSTALL_ROOT}$mnt_pnt" 2>/dev/null
 		case "$type" in
 			ntfs)
-				echo "$devname	$mnt_pnt	ntfs-3g	defaults,noatime,gid=plugdev,fmask=117,dmask=007,locale=$locale	0	0" >> /etc/fstab
+				echo "$devname	$mnt_pnt	ntfs-3g	defaults,noatime,gid=plugdev,fmask=113,dmask=002,locale=$locale	0	0" >> /etc/fstab
 				mkdir -p $mnt_pnt && chown root:plugdev $mnt_pnt
 
 			;;

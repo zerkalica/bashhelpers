@@ -1,6 +1,6 @@
 <?php
 
-DEFINE('MAIL_DIR', '/home/nexor/public_html/tmp' );
+DEFINE('MAIL_DIR', '/tmp' );
 
 $stdin_str = file_get_contents('php://stdin');
 while( TRUE ) {

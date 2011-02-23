@@ -1,7 +1,7 @@
 #!/bin/sh
 
-DISTNAME='lucid'
-NEWDIST='maverick'
+DISTNAME='maverick'
+NEWDIST='natty'
 
 cat /etc/apt/sources.list | \
 while read str ; do
@@ -17,11 +17,11 @@ while read str ; do
 	if [ "$new_str" ] ; then
 		str="$new_str"
 	else
-		[ "$url" ] && str="#$str # not found !"
+		[ "$url" ] && str="$str"
 	fi
 
 	echo $str
-	echo "$str" >> ./sources.list.new
+	echo "$str" >> ./sources.new.list
 done
 
 #cat /etc/apt/sources.list | sed "s/[# ]*deb \([^ ]*\) $DISTNAME\([[:alpha:][:graph:]]*\) \(.*\)/\1 $NEWDIST\2 \3/g"

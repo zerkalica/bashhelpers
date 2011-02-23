@@ -1,0 +1,117 @@
+#main
+# deb http://de.archive.ubuntu.com/ubuntu natty main universe multiverse restricted
+# deb http://de.archive.ubuntu.com/ubuntu natty-updates main universe multiverse restricted
+# deb http://de.archive.ubuntu.com/ubuntu natty-proposed main universe multiverse restricted
+# deb http://de.archive.ubuntu.com/ubuntu natty-security main universe multiverse restricted
+# deb http://de.archive.ubuntu.com/ubuntu natty-backports main universe multiverse restricted
+deb http://mirror.yandex.ru/ubuntu/ natty main universe multiverse restricted
+deb http://mirror.yandex.ru/ubuntu/ natty-updates main universe multiverse restricted
+deb http://mirror.yandex.ru/ubuntu/ natty-proposed main universe multiverse restricted
+deb http://mirror.yandex.ru/ubuntu/ natty-security main universe multiverse restricted
+deb http://mirror.yandex.ru/ubuntu/ natty-backports main universe multiverse restricted
+
+#office
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com AB0E7BCE
+deb http://ppa.launchpad.net/thezbyg/ppa/ubuntu karmic main #gpick color chooser
+
+#xserver
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 8844C542
+deb http://ppa.launchpad.net/xorg-edgers/ppa/ubuntu natty main #xorg fresh
+
+#browsers
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 7EBC211F
+deb http://ppa.launchpad.net/ubuntu-mozilla-security/ppa/ubuntu maverick main #PPA for Ubuntu Mozilla Security Team
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 247510BE
+deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu natty main #Ubuntu Mozilla Daily Build Team
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 4E5E17B5
+deb http://ppa.launchpad.net/chromium-daily/ppa/ubuntu natty main #Ubuntu Chromium Daily Builds
+
+#file sharing
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 3F6729E2
+deb http://ppa.launchpad.net/tehnick/tehnick/ubuntu karmic main #eiskaltdc 2.0
+
+#chat
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com FA3A1271
+# deb http://ppa.launchpad.net/telepathy/ppa/ubuntu maverick main #empathy, libnice 0.10, etc
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com B2CDAA1B
+deb http://ppa.launchpad.net/qutim/qutim.svn/ubuntu maverick main #qutim
+
+#servers
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com EBA7BD49
+deb http://ppa.launchpad.net/cherokee-webserver/ppa/ubuntu maverick main #cherokee web server
+
+#music creation
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 3F7B4A1D
+deb http://ppa.launchpad.net/michael-gruz/ppa/ubuntu karmic main #skype, haamchi, geany
+#deb http://ppa.launchpad.net/michael-gruz/sound/ubuntu karmic main #ardour 3.0, qjacktl 0.3.5, streamtuner, jack 1.9.4
+#deb http://ppa.launchpad.net/michael-gruz/elektronik/ubuntu karmic main #eagle, gpsim
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 4D140B0620B0474CDA69B8A0AD70EA6AF76FFEBE
+deb http://ppa.launchpad.net/dtl131/ppa/ubuntu maverick main #audiohacks with NO PULSE support: gnome-applets, gnome-media, gnome-settings-daemon
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 736E4F0B
+#deb http://ppa.launchpad.net/falk-t-j/lucid/ubuntu lucid main #zynaddsubfx, vkeybd, wineasio, qtractor, lmms, alsa-plugins # not found !
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 108A879C
+#deb http://ppa.launchpad.net/cheleb/blender-svn/ubuntu natty main #blender25
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 736E4F0B
+deb http://ppa.launchpad.net/falk-t-j/games/ubuntu lucid main #games
+
+#codecs
+#fresh media
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 2EE163BB
+deb http://ppa.launchpad.net/towolf/ppa/ubuntu natty main #inkscape
+deb http://ppa.launchpad.net/towolf/codecs/ubuntu natty main #libvorbis 1.2.1 aotuv 5.6
+
+#graphics
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 405A15CB
+deb http://ppa.launchpad.net/matthaeus123/mrw-gimp-svn/ubuntu natty main #gimp 2.7
+
+#players
+
+#sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update
+deb http://packages.medibuntu.org/ lucid free non-free #vlc,libdvdcss2
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com C116A57C
+# deb http://ppa.launchpad.net/gmpc-trunk/mpd-trunk/ubuntu maverick main #mpd beta
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0FDCB012
+deb http://ppa.launchpad.net/zerkalica/psi-plus/ubuntu maverick main
+deb http://ppa.launchpad.net/zerkalica/pcmanfm2/ubuntu maverick main
+deb http://ppa.launchpad.net/zerkalica/main/ubuntu maverick main
+deb http://ppa.launchpad.net/zerkalica/devbuilds/ubuntu maverick main
+deb http://ppa.launchpad.net/zerkalica/php5-fpm/ubuntu maverick main
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 66AE0775
+#deb http://ppa.launchpad.net/conkyhardcore/ppa/ubuntu natty main #conky scripts, forecast, etc
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 484B044F
+deb http://ppa.launchpad.net/kernel-ppa/ppa/ubuntu maverick main #kernel
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 365C5CA1
+deb http://ppa.launchpad.net/transmissionbt/ppa/ubuntu natty main #transmission
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com EEA14886
+deb http://ppa.launchpad.net/webupd8team/gthumb/ubuntu maverick main #gthumb
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com C116A57C
+deb http://ppa.launchpad.net/gmpc-trunk/mpd-trunk/ubuntu maverick main #mpd
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 3C8E2A7F
+deb http://ppa.launchpad.net/alexey-smirnov/deadbeef/ubuntu maverick main #deadbeef
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com CEBAA066
+deb http://ppa.launchpad.net/ed10vi86/video/ubuntu maverick main #mplayer, vlc, x264, gnome-mplayer
+
+#sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 5E34AB6B
+deb http://ppa.launchpad.net/unity/daily/ubuntu natty main
