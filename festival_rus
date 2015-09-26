@@ -1,4 +1,0 @@
-#!/bin/sh
-TXT="$@"
-echo "(voice_msu_ru_nsh_clunits) (SayText \"$TXT\")" | aoss festival
-			
